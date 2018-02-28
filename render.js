@@ -45,6 +45,7 @@
 				}
 			}
 
+			// if page height is longer or equal remove last element and add it to beginning of tmArray
 			if ($page.height() >= pageHeight && $tmArray.length) {
 				const $lastChild = $page.children().last().remove()
 				$tmArray.unshift($lastChild)
@@ -59,7 +60,7 @@
     return atob(blob)
 	}
 
-	axios.get('FILL THIS IN')
+	axios.get('https://api.github.com/repos/duncannevin/md_renderer/readme')
     .then(res => res.data.content)
     .then(processMd)
     .then(init) 
