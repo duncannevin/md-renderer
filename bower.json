@@ -1,0 +1,22 @@
+{
+  "name": "md_render",
+  "authors": [
+    "Duncan Nevin <duncan.nevin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "marked": "^0.3.17",
+    "axios": "^0.18.0"
+  }
+}

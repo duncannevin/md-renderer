@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>md_render</title>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/marked/marked.min.js"></script>
+	<script src="bower_components/axios/dist/axios.min.js"></script>
+	<style>
+		#app {
+			height: 100vh;
+			width: 100vw;
+		}
+		#pages {
+			min-height: 100%;
+			width: 100vw;
+			margin: 0 auto;
+			border: 1px solid black;
+			background: grey;
+		}
+		.page {
+			border: 1px solid gold;
+			margin: 0 auto 40px auto;
+			background: white;
+			width: 600px;
+		}
+		img {
+			width: 600px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app"></div>
+	<script src="render.js"></script>
+</body>
+</html>
