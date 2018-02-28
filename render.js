@@ -46,7 +46,7 @@
 			}
 
 			// if page height is longer or equal remove last element and add it to beginning of tmArray
-			if ($page.height() >= pageHeight && $tmArray.length) {
+			if ($page.height() >= pageHeight) {
 				const $lastChild = $page.children().last().remove()
 				$tmArray.unshift($lastChild)
 			}
