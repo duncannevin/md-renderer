@@ -13,7 +13,7 @@
 
 		const $tm = $(marked(md))
 
-		// append $pages to app 
+		// append $pages to app
 		$('#app').append($pages)
 
 		function buildApage ($tmArray, test) {
@@ -23,8 +23,8 @@
 				$pages.children().each(function () {
 					$(this).css({height: '700px'})
 				})
-				return 
-			}	
+				return
+			}
 
 			// create a page element
 			const $page = $('<div class="page"></div>')
@@ -60,10 +60,11 @@
     return atob(blob)
 	}
 
-	axios.get('https://api.github.com/repos/duncannevin/md_renderer/readme')
-    .then(res => res.data.content)
+	fetch('https://api.github.com/repos/duncannevin/md-renderer/readme')
+    .then(res => res.json())
+    .then(res => res.content)
     .then(processMd)
-    .then(init) 
+    .then(init)
     .catch(console.error)
 
 })(window)
