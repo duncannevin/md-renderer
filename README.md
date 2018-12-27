@@ -3,7 +3,7 @@
 - Splits up markdown into fixed height pages
 - Able to created your own page breaks bay adding `---`
 - Useful for creating a PDF viewer like app.
-- [This readme is rendered using this tool](https://duncannevin.github.io/md_renderer/)
+- [Checkout this README rendered with the renderer](https://duncannevin.github.io/md-renderer/)
 ---
 # Fecit quamvis Combe silvas fors vides lumina
 
